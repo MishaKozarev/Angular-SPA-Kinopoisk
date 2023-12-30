@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { FilmItem } from 'src/app/kinopoisk/models/response.model';
 
 @Component({
   selector: 'app-film-item',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./film-item.component.scss'],
 })
 export class FilmItemComponent {
+  @Input() itemFilm!: FilmItem;
 
+  @Input() indexFilm!: number;
 }

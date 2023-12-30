@@ -1,11 +1,12 @@
 <div class="film-item">
-    <div class="film-item__number">1</div>
-    <img [src]="" class="film-item__img" alt="img">
-    <div class="film-item__content">
-        <div class="film-item__title">Зеленая миля</div>
-        <div class="film-item__subtitle">The Green Mile, 1999, 189 мин.</div>
-        <div class="film-item__description">США • драма  Режиссёр: Фрэнк Дарабонт</div>
+    <div class="film-item__number">{{indexFilm + 1}}</div>
+    <div class="film-item__box-img">
+        <img [src]="itemFilm.posterUrlPreview" class="film-item__img" alt="img">
     </div>
-    <div class="film-item__rating">9.1</div>
-
+    <div class="film-item__content">
+        <div class="film-item__title">{{itemFilm.nameEn}}</div>
+        <div class="film-item__subtitle">{{itemFilm.year}}</div>
+        <div class="film-item__description">{{itemFilm.filmLength}}</div>
+    </div>
+    <div class="film-item__rating">{{itemFilm.rating}}</div>
 </div>

@@ -1,4 +1,11 @@
 <div class="main">
-    <app-film-item></app-film-item>
-
+    <h2 class="main__title">Top films</h2>
+    <div *ngIf="filmsList$ | async as filmsList" class="main__container">
+        <app-film-item
+            *ngFor="let item of filmsList.films; let index = index"
+            [itemFilm]="item"
+            [indexFilm]="index"
+            class="main__container">
+        </app-film-item>
+    </div>
 </div>
