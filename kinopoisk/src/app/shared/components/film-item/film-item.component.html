@@ -8,5 +8,5 @@
         <div class="film-item__subtitle">{{itemFilm.year}}</div>
         <div class="film-item__description">{{itemFilm.filmLength}}</div>
     </div>
-    <div class="film-item__rating">{{itemFilm.rating}}</div>
+    <div appColorRating [rating]="itemFilm.rating" class="film-item__rating">{{itemFilm.rating}}</div>
 </div>
