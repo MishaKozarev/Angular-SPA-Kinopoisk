@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { ResponseFilmsTop } from 'src/app/kinopoisk/models/response.model';
-import { URL } from '../constants/url';
+import { URL } from '../../constants/url';
 
 @Injectable({
   providedIn: 'root',

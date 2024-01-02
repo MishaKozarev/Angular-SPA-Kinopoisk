@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { HttpService } from 'src/app/core/services/http.service';
+import { HttpService } from 'src/app/core/services/http/http.service';
+import { SortService } from 'src/app/core/services/sort/sort.service';
 import { ResponseFilmsTop } from '../../models/response.model';
 
 @Component({
@@ -11,10 +12,13 @@ import { ResponseFilmsTop } from '../../models/response.model';
 export class MainPageComponent implements OnInit {
   public filmsList$!: Observable<ResponseFilmsTop>;
 
-  constructor(private httpService: HttpService) {}
+
+  constructor(
+    private httpService: HttpService,
+    public sortService: SortService,
+  ) {}
 
   ngOnInit(): void {
     this.filmsList$ = this.httpService.getFilmsTop();
   }
-
 }
