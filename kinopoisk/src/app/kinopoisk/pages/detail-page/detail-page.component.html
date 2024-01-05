@@ -1,0 +1,33 @@
+<div *ngIf="filmById$ | async as filmById" class="detail-page">
+   <div class="detail-page__grid">
+      <div class="detail-page__grid-photo">
+         <img [src]="filmById.posterUrl" class="detail-page__grid-photo-main" alt="photo">
+         <img [src]="filmById.coverUrl" class="detail-page__grid-photo-main" alt="photo">
+         <div class="detail-page__grid-photo-video"></div>
+      </div>
+      <div class="detail-page__grid-main">
+         <h1 class="detail-page__grid-main-title">{{filmById.nameRu}}</h1>
+         <h4 class="detail-page__grid-main-subtitle">{{filmById.nameOriginal}}</h4>
+         <h2>About film</h2>
+         <div class="detail-page__grid-main-container">
+            <div class="element">
+               <div class="element__title">Год производства</div>
+               <div class="element__description">{{filmById.year}}</div>
+            </div>
+            <div class="element">
+               <div class="element__title">Жанр</div>
+               <div class="element__description">{{filmById.genres[0].genre}}</div>
+            </div>
+            <div class="element">
+               <div class="element__title">Слоган</div>
+               <div class="element__description">"{{filmById.slogan}}"</div>
+            </div>
+
+
+         </div>
+      </div>
+      <div class="detail-page__grid-actors"></div>
+      <div class="detail-page__grid-description"></div>
+
+   </div>
+</div>
