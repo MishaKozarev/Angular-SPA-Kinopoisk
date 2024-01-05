@@ -26,6 +26,7 @@
         display: flex;
         flex-direction: column;
         gap: 15px;
+        align-items: flex-start;
     }
 
     &__rating {
@@ -34,8 +35,14 @@
         font-weight: 900;
     }
 
-    &__title {
+    &__title-btn {
+        cursor: pointer;
+        background: inherit;
+        border: none;
         font-weight: 700;
+        width: fit-content;
+        text-align: start;
+        padding: 0;
     }
 
     &__subtitle {

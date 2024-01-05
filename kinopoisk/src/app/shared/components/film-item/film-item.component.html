@@ -4,7 +4,9 @@
         <img [src]="itemFilm.posterUrlPreview" class="film-item__img" alt="img">
     </div>
     <div class="film-item__content">
-        <div class="film-item__title">{{itemFilm.nameEn}}</div>
+        <button (click)="routingOnDetailPage(itemFilm.filmId)" class="film-item__title-btn">
+            {{itemFilm.nameEn? itemFilm.nameEn : itemFilm.nameRu}}
+        </button>
         <div class="film-item__subtitle">{{itemFilm.year}}</div>
         <div class="film-item__description">{{itemFilm.filmLength}}</div>
     </div>

@@ -6,11 +6,11 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
   declarations: [],
   imports: [
     MatButtonModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
   ],
   exports: [
     MatButtonModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
   ],
 })
 export class MaterialModule { }

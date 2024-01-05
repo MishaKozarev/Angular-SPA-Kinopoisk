@@ -1,5 +1,5 @@
 export enum URL {
-  apiKey = '825ad846-f377-4675-8a56-f2acab4faff7',
+  apiKey = 'b19d07a6-37fc-4764-82db-1fe39fe22139',
   link = 'https://kinopoiskapiunofficial.tech/api/',
   films = 'v2.2/films/',
   top = 'top',
