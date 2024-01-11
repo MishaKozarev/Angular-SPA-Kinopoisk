@@ -1,0 +1,17 @@
+<div class="top-films">
+    <h2 class="top-films__title">Top films</h2>
+    <div *ngIf="filmsTop$ | async as filmsTop; else loading" class="top-films__container">
+        <app-film-item
+            *ngFor="let item of filmsTop.films
+                | sortDate: sortService.isSortDate: sortService.ascendDate;
+                let index = index"
+            [itemFilm]="item"
+            [indexFilm]="index"
+            class="top-films__container">
+        </app-film-item>
+    </div>
+    <ng-template #loading>
+        <p class="loading">Loading ...</p>
+        <mat-spinner class="spinner" color="warn"></mat-spinner>
+    </ng-template>
+</div>

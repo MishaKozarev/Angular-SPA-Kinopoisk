@@ -34,3 +34,59 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.film-item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+    border-bottom: 1px solid gray;
+    padding: 10px;
+    width: 70%;
+
+    &__number {
+        width: 10%;
+        font-weight: 700;
+    }
+
+    &__box-img {
+        width: 20%;
+    }
+
+    &__img {
+        width: 72px;
+        height: 108px;
+    }
+
+    &__content {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+
+    &__rating {
+        width: 20%;
+        color: chocolate;
+        font-weight: 900;
+    }
+
+    &__title-btn {
+        cursor: pointer;
+        background: inherit;
+        border: none;
+        font-weight: 700;
+        width: fit-content;
+        text-align: start;
+        padding: 0;
+    }
+
+    &__subtitle {
+        font-size: 14px;
+    }
+
+    &__description {
+        color: gray;
+    }
+}

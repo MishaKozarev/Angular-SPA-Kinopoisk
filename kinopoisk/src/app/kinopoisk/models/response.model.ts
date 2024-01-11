@@ -81,3 +81,31 @@ export interface FilmItemById {
   has3D: false,
   lastSync: string
 }
+
+export interface FilmsPremiers {
+  total: number;
+  items: Item[];
+}
+
+export interface Item {
+  kinopoiskId: number,
+  nameRu: string,
+  nameEn: string,
+  year: number,
+  posterUrl: string,
+  posterUrlPreview: string,
+  countries: [
+    {
+      country: string
+    },
+  ],
+  genres: [
+    {
+      genre: string
+    },
+  ],
+  duration: number,
+  premiereRu: string
+}
+
+

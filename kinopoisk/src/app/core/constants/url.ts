@@ -3,4 +3,5 @@ export enum URL {
   link = 'https://kinopoiskapiunofficial.tech/api/',
   films = 'v2.2/films/',
   top = 'top',
+  premieres = 'premieres',
 }

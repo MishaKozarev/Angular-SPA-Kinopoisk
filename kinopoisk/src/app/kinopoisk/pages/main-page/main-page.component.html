@@ -1,14 +1,18 @@
 <div class="main">
-    <h2 class="main__title">Top films</h2>
-    <div *ngIf="filmsList$ | async as filmsList; else loading" class="main__container">
-        <app-film-item
-            *ngFor="let item of filmsList.films
-                | sortDate: sortService.isSortDate: sortService.ascendDate;
-                let index = index"
-            [itemFilm]="item"
-            [indexFilm]="index"
-            class="main__container">
-        </app-film-item>
+    <h2 class="main__title">Premieres</h2>
+    <div *ngIf="filmsPremieres$ | async as filmsList; else loading" class="main__container">
+        <div *ngFor="let item of filmsList.items;" class="film-item">
+            <div class="film-item__box-img">
+                <img [src]="item.posterUrlPreview" class="film-item__img" alt="img">
+            </div>
+            <div class="film-item__content">
+                <button class="film-item__title-btn">
+                    {{item.nameEn? item.nameEn : item.nameRu}}
+                </button>
+                <div class="film-item__subtitle">{{item.year}}</div>
+                <div class="film-item__description">{{item.premiereRu}}</div>
+            </div>
+        </div>
     </div>
     <ng-template #loading>
         <p class="loading">Loading ...</p>

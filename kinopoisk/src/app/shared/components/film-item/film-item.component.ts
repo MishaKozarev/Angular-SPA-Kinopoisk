@@ -22,7 +22,7 @@ export class FilmItemComponent implements OnInit {
     this.currentId = String(this.itemFilm.filmId);
   }
 
-  public routingOnDetailPage(id: number) {
+  public routingOnDetailPage(id: number): void {
     this.router.navigate([`${id}`]);
   }
 }
