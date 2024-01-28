@@ -7,6 +7,8 @@ import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.com
 import { LogoHeaderComponent } from './components/logo-header/logo-header.component';
 import { FormHeaderComponent } from './components/form-header/form-header.component';
 import { IconSearchComponent } from './components/icon-search/icon-search.component';
+import { BtnSigninHeaderComponent } from './components/btn-signin-header/btn-signin-header.component';
+import { BtnWatchHeaderComponent } from './components/btn-watch-header/btn-watch-header.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +16,8 @@ import { IconSearchComponent } from './components/icon-search/icon-search.compon
     LogoHeaderComponent,
     FormHeaderComponent,
     IconSearchComponent,
+    BtnSigninHeaderComponent,
+    BtnWatchHeaderComponent,
     NotFoundPageComponent,
   ],
   imports: [
