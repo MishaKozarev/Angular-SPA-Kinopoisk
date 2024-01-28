@@ -5,8 +5,6 @@ import { ColorRatingDirective } from './directives/color-rating.directive';
 import { MaterialModule } from './material/material.module';
 import { SortDatePipe } from './pipes/sort-date/sort-date.pipe';
 
-
-
 @NgModule({
   declarations: [
     FilmItemComponent,

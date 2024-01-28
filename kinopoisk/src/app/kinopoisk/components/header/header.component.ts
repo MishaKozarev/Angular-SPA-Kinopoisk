@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { SortService } from '../../services/sort/sort.service';
+import { SortService } from '../../../core/services/sort/sort.service';
 
 @Component({
   selector: 'app-header',

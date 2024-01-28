@@ -8,9 +8,9 @@ describe('BtnSigninHeaderComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [BtnSigninHeaderComponent]
+      imports: [BtnSigninHeaderComponent],
     })
-    .compileComponents();
+      .compileComponents();
     
     fixture = TestBed.createComponent(BtnSigninHeaderComponent);
     component = fixture.componentInstance;

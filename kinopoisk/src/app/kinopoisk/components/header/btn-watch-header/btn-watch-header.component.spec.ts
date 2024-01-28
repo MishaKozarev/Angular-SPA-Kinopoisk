@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SignupPageComponent } from './signup-page.component';
+import { BtnWatchHeaderComponent } from './btn-watch-header.component';
 
-describe('SignupPageComponent', () => {
-  let component: SignupPageComponent;
-  let fixture: ComponentFixture<SignupPageComponent>;
+describe('BtnWatchHeaderComponent', () => {
+  let component: BtnWatchHeaderComponent;
+  let fixture: ComponentFixture<BtnWatchHeaderComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [SignupPageComponent],
+      imports: [BtnWatchHeaderComponent],
     })
       .compileComponents();
     
-    fixture = TestBed.createComponent(SignupPageComponent);
+    fixture = TestBed.createComponent(BtnWatchHeaderComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
