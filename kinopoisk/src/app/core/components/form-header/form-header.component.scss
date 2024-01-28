@@ -1,0 +1,16 @@
+form {
+  position: relative;
+
+  input {
+    width: 250px;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+    background-color: hsla(0,0%,100%,.15);
+  }
+}
+app-icon-search {
+  position: absolute;
+  top: 7px;
+  right: 4px;
+}

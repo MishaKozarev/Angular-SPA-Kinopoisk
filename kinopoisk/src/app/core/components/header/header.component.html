@@ -1,6 +1,12 @@
 <header class="header">
-    <ul class="header__list">
-        <button mat-button (click)="routingOnTopFilmsPage()">Top films</button>
-        <button mat-button (click)="addSortByDate()">Year</button>
-    </ul>
+  <ul class="header__list">
+    <div class="header__logo">
+      <app-logo-header></app-logo-header>
+    </div>
+    <app-form-header></app-form-header>
+    <button class="btn-look">Смотреть кино</button>
+    <button class="btn-signin">Войти</button>
+    <!-- <button mat-button (click)="routingOnTopFilmsPage()">Top films</button>
+    <button mat-button (click)="addSortByDate()">Year</button> -->
+</ul>
 </header>
