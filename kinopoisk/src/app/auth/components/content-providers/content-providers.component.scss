@@ -1,0 +1,42 @@
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  width: 250px;
+
+  .btn-icon {
+    background-color: inherit;
+    border: 1px solid #d8dce6;
+    border-radius: 44px;
+    height: 44px;
+    min-width: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+    &:hover {
+      background-color: rgb(0, 0, 0, .1);
+    }
+
+    .icon {
+      background-size: 20px 20px;
+      width: 20px;
+      height: 20px;
+    }
+    .icon-vk {
+      background-image: url('../../../../assets/icon-vk.png');
+    }
+
+    .icon-google {
+      background-image: url('../../../../assets/icon-google.png');
+    }
+
+    .icon-facebook {
+      background-image: url('../../../../assets/icon-facebook.png');
+    }
+    .icon-twitter {
+      background-image: url('../../../../assets/icon-twitter.png');
+    }
+  }
+}

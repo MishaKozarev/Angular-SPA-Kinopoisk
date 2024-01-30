@@ -5,6 +5,7 @@ import { BtnYandexIdComponent } from './components/btn-yandex-id/btn-yandex-id.c
 import { SigninPageComponent } from './pages/signin-page/signin-page.component';
 import { BtnComeBackComponent } from './components/btn-come-back/btn-come-back.component';
 import { AuthFormComponent } from './components/auth-form/auth-form.component';
+import { ContentProvidersComponent } from './components/content-providers/content-providers.component';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,7 @@ import { AuthFormComponent } from './components/auth-form/auth-form.component';
     BtnYandexIdComponent,
     BtnComeBackComponent,
     AuthFormComponent,
+    ContentProvidersComponent,
   ],
   imports: [
     CommonModule,
