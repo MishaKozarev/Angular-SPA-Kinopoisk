@@ -12,8 +12,10 @@ import { IconSearchComponent } from './components/header/icon-search/icon-search
 import { BtnSigninHeaderComponent } from './components/header/btn-signin-header/btn-signin-header.component';
 import { BtnWatchHeaderComponent } from './components/header/btn-watch-header/btn-watch-header.component';
 import { PremieresComponent } from './components/premieres/premieres.component';
-import { WidgetComponent } from './components/main/widget/widget.component';
-import { MainMenuComponent } from './components/main/main-menu/main-menu.component';
+import { WidgetComponent } from './pages/home-page/components/widget/widget.component';
+import { HomePageComponent } from './pages/home-page/home-page.component';
+import { NavigationComponent } from './pages/home-page/components/navigation/navigation.component';
+import { NewsBlockComponent } from './pages/home-page/components/news-block/news-block.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { MainMenuComponent } from './components/main/main-menu/main-menu.compone
     TopFilmsComponent,
     PremieresComponent,
     WidgetComponent,
-    MainMenuComponent,
+    NavigationComponent,
+    HomePageComponent,
+    NewsBlockComponent,
   ],
   imports: [
     CommonModule,

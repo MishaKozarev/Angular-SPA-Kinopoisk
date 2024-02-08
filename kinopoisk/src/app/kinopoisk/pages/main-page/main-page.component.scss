@@ -1,35 +1,11 @@
-.main {
-    width: 1240px;
-    min-height: 100vh;
-    margin: 0 auto;
-    background: beige;
-    position: relative;
-    display: grid;
-    grid-template-columns: 0.4fr 1fr;
+.main__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
 
-    &__content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-        border-left: 1px solid rgb(0, 0, 0, .4);
-        padding: 20px 0 0 0;
-    }
-
-    &__item {
-
-        h4 {
-            font-weight: 600;
-        }
-
-        .block-focus {
-            display: flex;
-            gap: 10px;
-
-            img {
-                width: 192px;
-                height: 262px;
-            }
-        }
-    }
+  .main__header {
+    position: fixed;
+    width: 100%;
+    z-index: 99;
   }
+}
