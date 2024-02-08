@@ -1,22 +1,19 @@
 <app-header></app-header>
 <div class="main">
-    <h2 class="main__title">Premieres</h2>
-    <div *ngIf="filmsPremieres$ | async as filmsList; else loading" class="main__container">
-        <div *ngFor="let item of filmsList.items;" class="film-item">
-            <div class="film-item__box-img">
-                <img [src]="item.posterUrlPreview" class="film-item__img" alt="img">
-            </div>
-            <div class="film-item__content">
-                <button class="film-item__title-btn">
-                    {{item.nameEn? item.nameEn : item.nameRu}}
-                </button>
-                <div class="film-item__subtitle">{{item.year}}</div>
-                <div class="film-item__description">{{item.premiereRu}}</div>
+    <nav class="main__nav">
+        <app-main-menu></app-main-menu>
+    </nav>
+    <div class="main__content">
+        <app-widget></app-widget>
+        <div class="main__item">
+            <h4>В фокусе</h4>
+            <div class="block-focus">
+                <img src="https://avatars.mds.yandex.net/get-kinopoisk-post-img/1539913/52afa1301d315ac40a18b5e190600d1c/220x294" alt="icon">
+                <img src="https://avatars.mds.yandex.net/get-kinopoisk-post-img/1528730/b0c9775c301353f9a46cb27f8e7e4743/220x294" alt="icon">
+                <img src="https://avatars.mds.yandex.net/get-kinopoisk-post-img/1101236/08f7fd200158b4ea6efcb30424f9432e/220x294" alt="icon">
+                <img src="https://avatars.mds.yandex.net/get-kinopoisk-post-img/1528730/31b91a5b34c71836e83b05b23427a173/220x294" alt="icon">
+
             </div>
         </div>
     </div>
-    <ng-template #loading>
-        <p class="loading">Loading ...</p>
-        <mat-spinner class="spinner" color="warn"></mat-spinner>
-    </ng-template>
 </div>

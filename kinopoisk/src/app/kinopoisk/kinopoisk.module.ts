@@ -11,6 +11,9 @@ import { LogoHeaderComponent } from './components/header/logo-header/logo-header
 import { IconSearchComponent } from './components/header/icon-search/icon-search.component';
 import { BtnSigninHeaderComponent } from './components/header/btn-signin-header/btn-signin-header.component';
 import { BtnWatchHeaderComponent } from './components/header/btn-watch-header/btn-watch-header.component';
+import { PremieresComponent } from './components/premieres/premieres.component';
+import { WidgetComponent } from './components/main/widget/widget.component';
+import { MainMenuComponent } from './components/main/main-menu/main-menu.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +26,9 @@ import { BtnWatchHeaderComponent } from './components/header/btn-watch-header/bt
     BtnWatchHeaderComponent,
     DetailPageComponent,
     TopFilmsComponent,
+    PremieresComponent,
+    WidgetComponent,
+    MainMenuComponent,
   ],
   imports: [
     CommonModule,
