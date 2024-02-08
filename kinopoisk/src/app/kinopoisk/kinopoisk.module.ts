@@ -16,6 +16,7 @@ import { WidgetComponent } from './pages/home-page/components/widget/widget.comp
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { NavigationComponent } from './pages/home-page/components/navigation/navigation.component';
 import { NewsBlockComponent } from './pages/home-page/components/news-block/news-block.component';
+import { PopupNavigationComponent } from './components/header/popup-navigation/popup-navigation.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { NewsBlockComponent } from './pages/home-page/components/news-block/news
     NavigationComponent,
     HomePageComponent,
     NewsBlockComponent,
+    PopupNavigationComponent,
   ],
   imports: [
     CommonModule,

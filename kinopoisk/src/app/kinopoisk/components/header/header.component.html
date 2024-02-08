@@ -1,7 +1,12 @@
 <header class="header">
   <ul class="header__list">
-    <div class="header__logo">
+    <div (mouseenter)="showPopup()" (mouseleave)="hidePopup()" class="header__logo">
       <app-logo-header></app-logo-header>
+      <ng-container *ngIf="isNotHomeComponent">
+        <ng-container *ngIf="isShowPopup">
+          <app-popup-navigation></app-popup-navigation>
+        </ng-container>
+      </ng-container>
     </div>
     <app-form-header></app-form-header>
     <app-btn-watch-header></app-btn-watch-header>
