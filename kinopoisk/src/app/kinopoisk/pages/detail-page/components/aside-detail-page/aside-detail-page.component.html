@@ -1,0 +1,7 @@
+<p>{{filmById.ratingKinopoisk}}</p>
+<p>В главных голях</p>
+<div *ngIf="filmActors$ | async as filmActors">
+  <div *ngFor="let actor of filmActors.slice(0, 10)">
+    <p>{{actor.nameRu}}</p>
+  </div>
+</div>

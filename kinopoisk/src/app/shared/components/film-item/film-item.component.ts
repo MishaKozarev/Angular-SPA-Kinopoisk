@@ -23,6 +23,6 @@ export class FilmItemComponent implements OnInit {
   }
 
   public routingOnDetailPage(id: number): void {
-    this.router.navigate([`${id}`]);
+    this.router.navigate([`kinopoisk/${id}`]);
   }
 }

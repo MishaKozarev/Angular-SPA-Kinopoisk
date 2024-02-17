@@ -17,6 +17,7 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { NavigationComponent } from './pages/home-page/components/navigation/navigation.component';
 import { NewsBlockComponent } from './pages/home-page/components/news-block/news-block.component';
 import { PopupNavigationComponent } from './components/header/popup-navigation/popup-navigation.component';
+import { AsideDetailPageComponent } from './pages/detail-page/components/aside-detail-page/aside-detail-page.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { PopupNavigationComponent } from './components/header/popup-navigation/p
     HomePageComponent,
     NewsBlockComponent,
     PopupNavigationComponent,
+    AsideDetailPageComponent,
   ],
   imports: [
     CommonModule,

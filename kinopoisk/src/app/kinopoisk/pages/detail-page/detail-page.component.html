@@ -6,7 +6,7 @@
          <div class="detail-page__grid-photo-video"></div>
       </div>
       <div class="detail-page__grid-main">
-         <h1 class="detail-page__grid-main-title">{{filmById.nameRu}}</h1>
+         <h1 class="detail-page__grid-main-title">{{filmById.nameRu}} ({{filmById.year}})</h1>
          <h4 class="detail-page__grid-main-subtitle">{{filmById.nameOriginal}}</h4>
          <h2>About film</h2>
          <div class="detail-page__grid-main-container">
@@ -26,7 +26,9 @@
 
          </div>
       </div>
-      <div class="detail-page__grid-actors"></div>
+      <div class="detail-page__grid-actors">
+         <app-aside-detail-page [filmById]="filmById"></app-aside-detail-page>
+      </div>
       <div class="detail-page__grid-description"></div>
 
    </div>

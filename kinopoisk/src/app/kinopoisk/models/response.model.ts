@@ -108,4 +108,14 @@ export interface Item {
   premiereRu: string
 }
 
+export interface ActorItem {
+  staffId: number,
+  nameRu: string,
+  nameEn: string,
+  description: string,
+  posterUrl: string,
+  professionText: string,
+  professionKey: string
+}
+
 

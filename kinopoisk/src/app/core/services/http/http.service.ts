@@ -1,6 +1,6 @@
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { FilmItemById, FilmsPremiers, ResponseFilmsTop } from 'src/app/kinopoisk/models/response.model';
+import { ActorItem, FilmItemById, FilmsPremiers, ResponseFilmsTop } from 'src/app/kinopoisk/models/response.model';
 import { URL } from '../../constants/url';
 
 @Injectable({
@@ -10,6 +10,8 @@ export class HttpService {
   private readonly link: string = URL.link;
 
   private readonly films: string = URL.films;
+
+  private readonly actors: string = URL.actors;
 
   private readonly filmsTop: string = URL.top;
 
@@ -45,5 +47,14 @@ export class HttpService {
 
     const params = new HttpParams().set('year', 2024).set('month', 'JANUARY');
     return this.http.get<FilmsPremiers>(`${this.link}${this.films}${this.premieres}`, { headers, params });
+  }
+
+  public getFilsActors(filmId: number) {
+    const headers = {
+      'X-API-KEY': URL.apiKey,
+      'Content-Type': 'application/json',
+    };
+    const params = new HttpParams().set('filmId', filmId);
+    return this.http.get<ActorItem[]>(`${this.link}${this.actors}`, { headers, params });
   }
 }
