@@ -4,12 +4,14 @@ import { FilmItemComponent } from './components/film-item/film-item.component';
 import { ColorRatingDirective } from './directives/color-rating.directive';
 import { MaterialModule } from './material/material.module';
 import { SortDatePipe } from './pipes/sort-date/sort-date.pipe';
+import { SortRatingPipe } from './pipes/sort-rating/sort-rating.pipe';
 
 @NgModule({
   declarations: [
     FilmItemComponent,
     ColorRatingDirective,
     SortDatePipe,
+    SortRatingPipe,
   ],
   imports: [
     CommonModule,
@@ -20,6 +22,7 @@ import { SortDatePipe } from './pipes/sort-date/sort-date.pipe';
     ColorRatingDirective,
     MaterialModule,
     SortDatePipe,
+    SortRatingPipe,
   ],
 })
 export class SharedModule { }

@@ -3,7 +3,7 @@
     <div *ngIf="filmsTop$ | async as filmsTop; else loading" class="top-films__container">
         <app-film-item
             *ngFor="let item of filmsTop.films
-                | sortDate: sortService.isSortDate: sortService.ascendDate;
+                | sortDate: sortService.isSortDate: sortService.ascendDate | sortRating;
                 let index = index"
             [itemFilm]="item"
             [indexFilm]="index"
