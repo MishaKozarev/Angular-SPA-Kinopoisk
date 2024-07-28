@@ -5,6 +5,7 @@ import { TopFilmsComponent } from './components/top-films/top-films.component';
 import { DetailPageComponent } from './pages/detail-page/detail-page.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { MainPageComponent } from './pages/main-page/main-page.component';
+import { SportComponent } from './pages/sport/sport.component';
 
 const routes = [
   {
@@ -24,6 +25,10 @@ const routes = [
         component: PremieresComponent,
       },
       {
+        path: 'sport',
+        component: SportComponent,
+      },
+      {
         path: ':id',
         component: DetailPageComponent,
       },
@@ -31,9 +36,8 @@ const routes = [
   },
 ];
 
-
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class KinopoiskRoutingModule { }
+export class KinopoiskRoutingModule {}
