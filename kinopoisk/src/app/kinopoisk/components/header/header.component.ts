@@ -23,7 +23,7 @@ export class HeaderComponent implements OnInit {
   constructor(
     private sortService: SortService,
     private router: Router,
-    private pageService: PageService,
+    private pageService: PageService
   ) {}
 
   ngOnInit(): void {
@@ -45,11 +45,14 @@ export class HeaderComponent implements OnInit {
   }
 
   public showPopup() {
-    this.isShowPopup = true;
+    if (this.router.url === '/kinopoisk') {
+      this.isShowPopup = false;
+    } else {
+      this.isShowPopup = true;
+    }
   }
 
   public hidePopup() {
     this.isShowPopup = false;
-
   }
 }
